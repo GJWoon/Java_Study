@@ -2,7 +2,7 @@ package com.study.java_study.ch_06;
 
 
 class Data {
-    int a = 1;
+    int x = 1;
 }
 
 public class PrimitiveParamEx {
@@ -12,18 +12,18 @@ public class PrimitiveParamEx {
     public static void main(String[] args) {
         Data d = new Data();
 
-        System.out.println("main a = " + d.a);
+        System.out.println("main x = " + d.x);
 
-        changeInt(d.a);
+        changeInt(d.x);
 
-        System.out.println("changeInt After a = " + d.a);
+        System.out.println("changeInt After x = " + d.x);
 
-        System.out.println(d.a);
+        System.out.println(d.x);
     }
-    static void changeInt(int d) {
+    static void changeInt(int x) {
 
-        d = 2;
-        System.out.println("changeInt" + d);
+        x = 2;
+        System.out.println("changeInt x = " + x);
 
     }
 
