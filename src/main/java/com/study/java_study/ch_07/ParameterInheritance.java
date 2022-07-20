@@ -5,7 +5,6 @@ public class ParameterInheritance {
     int money = 10000;
     int point = 0;
 
-
     // 중복된 코드를 매개변수의 다형성을 이용하여 제거
 //    void buy(Phone t) {
 //        money -= t.price;
@@ -19,7 +18,6 @@ public class ParameterInheritance {
 //        money -= mo.price;
 //        point += mo.bonusPoint;
 //    }
-
 
     void buy(Product product) {
         money -= product.price;
