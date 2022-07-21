@@ -4,7 +4,6 @@ public class Abstract {
     AudioPlay audioPlay = new AudioPlay();
 }
 
-
 abstract class Player{ // 추상클래스 (미완성 클래스)
     abstract void play(int pos);  // 추상메서드 (구현부가 없는 미완성 메서드)
     abstract void stop(); // 추상메서
