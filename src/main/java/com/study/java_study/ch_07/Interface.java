@@ -16,10 +16,25 @@ interface PlayingCard {
 
 }
 
+class Card implements PlayingCard {
+
+    @Override
+    public int getDiamond() {
+        return 0;
+    }
+
+    @Override
+    public int getHeart() {
+        return 0;
+    }
+
+
+}
+
+
 // 인터페이스의 조상은 인터페이스만 가능
 
 //interface ExtendsTest extends Object {
 //
 //}
-
 
