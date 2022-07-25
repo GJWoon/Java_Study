@@ -78,7 +78,41 @@ class FighterTest {
         //f.attack(f);
         Fightable fightable = f2.getFightable();
     }
+}
 
+
+class A{
+    public void methodB(bImpl b){
+        b.method();
+    }
+}
+class B implements bImpl{
+
+    public void method() {
+    }
+}
+
+class C implements bImpl{
+
+    @Override
+    public void method() {
+
+    }
+}
+
+interface bImpl{
+    void method();
+}
+
+class InterFaceABTest{
+
+    public static void main(String[] args) {
+        A a = new A();
+        B b = new B();
+        C c = new C();
+        a.methodB(b);
+        a.methodB(c);
+    }
 }
 // 인터페이스의 조상은 인터페이스만 가능
 
